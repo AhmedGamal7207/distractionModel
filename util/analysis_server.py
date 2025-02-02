@@ -12,7 +12,7 @@ from keras.models import load_model
 class analysis:
     # Initialise models
     def __init__(self):
-        self.emotion_model = load_model('../model/emotion_recognition.h5')
+        self.emotion_model = load_model(r'D:\Work\Genio Tech Online\AI Models\Workspace\distractionModel\util\model/emotion_recognition.h5')
         self.detector = dlib.get_frontal_face_detector()
         self.predictor = dlib.shape_predictor(
             "shape_predictor_68_face_landmarks.dat")
